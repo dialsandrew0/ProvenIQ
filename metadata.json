@@ -1,0 +1,10 @@
+{
+  "name": "PROVENIQ: Estate Intelligence",
+  "description": "Decision-grade visual appraisal, sleeper buy detection, hallmark decoding, and multi-channel estate arbitrage intelligence engine.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

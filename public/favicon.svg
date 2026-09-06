@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pvnq-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="35%" stop-color="#F59E0B" />
+      <stop offset="70%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+    <linearGradient id="pvnq-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <radialGradient id="pvnq-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="100" height="100" rx="22" fill="#0c0f13" />
+
+  <!-- Subtle glow backdrop -->
+  <circle cx="56" cy="40" r="28" fill="url(#pvnq-glow)" />
+
+  <!-- Outer Calibration Bezel / Precision ticks -->
+  <circle cx="56" cy="40" r="25" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="2 3" stroke-opacity="0.4" />
+
+  <!-- Monogram P + Q Ligature & Appraisal Loupe Structure -->
+  <!-- Vertical Caliper Stem (left spine of the P) -->
+  <rect x="20" y="16" width="10" height="68" rx="5" fill="url(#pvnq-gold)" />
+  <rect x="20" y="56" width="10" height="28" rx="5" fill="#B45309" opacity="0.6" />
+
+  <!-- Loupe Ring / P Loop / Q Geometry -->
+  <path 
+    d="M 28 16 
+       H 58 
+       C 73 16, 84 27, 84 41 
+       C 84 55, 73 66, 58 66 
+       H 28 
+       Z" 
+    fill="none" 
+    stroke="url(#pvnq-gold)" 
+    stroke-width="9" 
+    stroke-linejoin="round"
+  />
+
+  <!-- Q Viewfinder Ray / Tail (dynamic 45° angle) -->
+  <path 
+    d="M 52 56 L 78 84" 
+    stroke="url(#pvnq-gold)" 
+    stroke-width="9" 
+    stroke-linecap="round"
+  />
+
+  <!-- Internal Gemstone Facet / Optical Lens Chamber -->
+  <polygon 
+    points="56,29 67,40 56,51 45,40" 
+    fill="#0f172a" 
+    stroke="url(#pvnq-cyan)" 
+    stroke-width="2" 
+    stroke-linejoin="round"
+  />
+
+  <!-- Central AI Optical Reticle / Core Spark -->
+  <circle cx="56" cy="40" r="3.5" fill="url(#pvnq-cyan)" />
+  <circle cx="56" cy="40" r="1.5" fill="#FFFFFF" />
+
+  <!-- Precision reticle ticks -->
+  <line x1="56" y1="24" x2="56" y2="27" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="56" y1="53" x2="56" y2="56" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="40" y1="40" x2="43" y2="40" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="69" y1="40" x2="72" y2="40" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" />
+</svg>

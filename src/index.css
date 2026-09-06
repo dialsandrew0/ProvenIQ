@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #07090e; /* Obsidian space velvet */
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+/* Magic Carpet Floating Animations */
+@keyframes carpetFloatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0.4deg);
+  }
+}
+
+@keyframes carpetFloatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(-0.35deg);
+  }
+}
+
+@keyframes magicGlowPulse {
+  0%, 100% {
+    opacity: 0.45;
+    filter: blur(28px);
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.85;
+    filter: blur(38px);
+    transform: scale(1.03);
+  }
+}
+
+@keyframes silkBorderSweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.carpet-float-active {
+  animation: carpetFloatSlow 7s ease-in-out infinite;
+}
+
+.carpet-float-reverse {
+  animation: carpetFloatReverse 8.5s ease-in-out infinite;
+}
+
+.magic-glow-pulse {
+  animation: magicGlowPulse 5s ease-in-out infinite;
+}
+
+.silk-gradient-border {
+  background-size: 200% 200%;
+  animation: silkBorderSweep 6s ease infinite;
+}
+
+/* Frameless Window Custom Scrollbars */
+.carpet-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.carpet-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carpet-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+
+.carpet-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.4);
+}
+
